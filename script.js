@@ -27,7 +27,7 @@ $( document ).ready(function(){
     let redirect_uri = 'https%3A%2F%2Fjuanengineer.github.io%2Fdemo_spotify_api';
     //***************** END *************************************************
 
-    const redirect = 'https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}';
+    const redirect = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}`;
     // Don't authorize if we have an access token already
     if(accessToken == null || accessToken == "" || accessToken == undefined){
         window.location.replace(redirect);
